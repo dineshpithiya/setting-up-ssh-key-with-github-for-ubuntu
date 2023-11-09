@@ -9,10 +9,10 @@
 Step 1: Generating a new SSH key
 -   Open your terminal and use the following line to create a new SSH key. In the place of email@gmail.com , enter the mail to which your GitHub account is linked.
 
-`
+```
 ssh-keygen -t rsa -b 4096 -C "email@gmail.com"
 
-`
+```
 -   Press Enter to save the key in the default location.
 
 Step 2: Enter the passphrase
