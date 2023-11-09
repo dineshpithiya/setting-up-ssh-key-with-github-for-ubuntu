@@ -11,7 +11,6 @@ Step 1: Generating a new SSH key
 
 ```
 ssh-keygen -t rsa -b 4096 -C "email@gmail.com"
-
 ```
 -   Press Enter to save the key in the default location.
 
@@ -21,23 +20,19 @@ You can add the passphrase and save it on ssh-agent. If you don’t want to add 
 
 Step 3: Adding your SSH key to ssh-agent
 We can add our key using the following line
-`
+```
 eval "$(ssh-agent -s)"
-
-`
-`
+```
+```
 ssh-add ~/.ssh/id_rsa
-
-`
+```
 
 Step 4: Add your key to GitHub
 -   In order to get our key, use the following command
-`
+```
 cat ~/.ssh/id_rsa.pub
-
-`
+```
 -   Then copy the content (starting from ssh-rsa). Now open your GitHub account and do the following steps :
-
 -   Click on your profile in the top right corner and select Settings from the drop-down box.
 
 ![git setting menu](./git-account.webp)
@@ -54,7 +49,8 @@ cat ~/.ssh/id_rsa.pub
 
 ##   You have successfully added a new SSH key to your GitHub account. Hope you found it useful.
 
-#   Let's clone your reposirtory
+##  Let's clone your reposirtory
 -   git clone <ssh url>
-`git clone git@github.com:dineshpithiya/setting-up-ssh-key-with-github-for-ubuntu.git
-`
+```
+git clone git@github.com:dineshpithiya/setting-up-ssh-key-with-github-for-ubuntu.git
+```
