@@ -3,7 +3,7 @@
 -   Using SSH, you can connect with GitHub without supplying your username and personal access token in each visit.
 
 ##  Prerequisites
--   Ubuntu server
+-   Ubuntu servers
 -   GitHub Account
 
 Step 1: Generating a new SSH key
